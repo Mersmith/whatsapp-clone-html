@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WhatsApp UI Clone</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <!-- CONTENEDOR WHATSAPP -->
+  <div class="contenedor_whatsapp">
+
+    <!-- IZQUIERDA OPCIONES -->
+    <div class="contenedor_whatsapp_izquierda_opciones">
+      <p>iZQUIERDA OPCIONES</p>
+      <button id="cerrar_contenedor_whatsapp_izquierda_opciones">cerrar</button>
+    </div>
+
+    <!-- IZQUIERDA -->
+    <div class="contenedor_whatsapp_izquierda">
+
+      <!-- CABECERA -->
+      <div class="whatsapp_cabecera">
+        <div class="cabecera_perfil_propio">
+          <img src="images/user.jpg" alt="" class="perfil_imagen">
+        </div>
+        <ul class="cabecera_iconos">
+          <li class="cabecera_iconos_item"><ion-icon name="scan-circle-outline"></ion-icon></li>
+          <li class="cabecera_iconos_item" id="abrir_contenedor_whatsapp_izquierda_opciones"><ion-icon
+              name="chatbox"></ion-icon></li>
+          <li class="cabecera_iconos_item" id="abrir_contenedor_icono_opciones_perfil">
+            <ion-icon name="ellipsis-vertical"></ion-icon>
+            <!-- OPCIÓN 3 -->
+            <div class="contenedor_icono_opciones_perfil">
+              <ul>
+                <li>Nuevo grupo</li>
+                <li>Perfil</li>
+                <li>Mensajes destacados</li>
+                <li>Etiquetas</li>
+                <li>Configuración</li>
+                <li>Cerrar sesión</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- BUSCAR CHAT -->
+      <div class="contenedor_buscar_chat">
+        <div class="contenedor_buscar_chat_input">
+          <input type="text" placeholder="Busca un chat o inicia uno nuevo.">
+          <ion-icon name="search-outline"></ion-icon>
+        </div>
+        <div class="contenedor_buscar_chat_filtro">
+          <ion-icon name="ellipsis-horizontal" id="abrir_contenedor_icono_opciones_filtro"></ion-icon>
+          <!-- OPCIÓN 3 -->
+          <div class="contenedor_icono_opciones_filtro">
+            <ul>
+              <li class="contenedor_icono_opciones_filtro_subtitulo">Chats</li>
+              <li class="contenedor_icono_opciones_filtro_subtitulo_no"><ion-icon
+                  name="chatbubble-ellipses-sharp"></ion-icon>Chat no leídos</li>
+              <li class="contenedor_icono_opciones_filtro_subtitulo_no"><ion-icon name="person"></ion-icon>Contactos
+              </li>
+              <li class="contenedor_icono_opciones_filtro_subtitulo_no"><ion-icon
+                  name="person-remove"></ion-icon>Contactos no guardados</li>
+              <li class="contenedor_icono_opciones_filtro_subtitulo_no"><ion-icon name="people-sharp"></ion-icon>Grupos
+              </li>
+              <li class="contenedor_icono_opciones_filtro_subtitulo">Etiquetas</li>
+              <li class="contenedor_icono_opciones_filtro_subtitulo_no"><ion-icon name="at-circle"></ion-icon>Importante
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- CHAT LISTA -->
+      <div class="contenedor_lista_chat scroll_bar_whatsapp">
+
+        <!-- CHAT ARCHIVADO -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen chat_item_archivado">
+            <ion-icon name="pricetag-sharp"></ion-icon>
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Archivados</h4>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item chat_activo">
+          <div class="chat_item_imagen">
+            <img src="images/img1.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Jhon Doe</h4>
+              <p class="chat_item_tiempo">10:56</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>How are you doing?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item unread">
+          <div class="chat_item_imagen">
+            <img src="images/img2.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Andre</h4>
+              <p class="chat_item_tiempo">12:34</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>I love your youtube videos!</p>
+              <b>1</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item unread">
+          <div class="chat_item_imagen">
+            <img src="images/img3.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Olivia</h4>
+              <p class="chat_item_tiempo">Yesterday</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>I just subscribed to your channel</p>
+              <b>2</b>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img4.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Parker</h4>
+              <p class="chat_item_tiempo">Yesterday</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>Hey!</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img7.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Zoey</h4>
+              <p class="chat_item_tiempo">18/01/2022</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>I'll get back to you</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img8.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Josh</h4>
+              <p class="chat_item_tiempo">17/01/2022</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>Congratulations</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img9.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Dian</h4>
+              <p class="chat_item_tiempo">15/01/2022</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>Thanks alot</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img5.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Sam</h4>
+              <p class="chat_item_tiempo">Yesterday</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>Did you finish the project?</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img6.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Junior</h4>
+              <p class="chat_item_tiempo">18/01/2022</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>Nice course</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img7.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Zoey</h4>
+              <p class="chat_item_tiempo">18/01/2022</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>I'll get back to you</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img8.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Josh</h4>
+              <p class="chat_item_tiempo">17/01/2022</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>Congratulations</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- CHAT LISTA ITEM -->
+        <div class="lista_chat_item">
+          <div class="chat_item_imagen">
+            <img src="images/img9.jpg" class="perfil_imagen" alt="">
+          </div>
+          <div class="chat_item_detalle">
+            <div class="chat_item_nombre">
+              <h4>Dian</h4>
+              <p class="chat_item_tiempo">15/01/2022</p>
+            </div>
+            <div class="chat_item_mensaje">
+              <p>Thanks alot</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- DERECHA -->
+    <div class="contenedor_whatsapp_derecha">
+
+      <!-- CONTENEDOR NO SELECCIONADO -->
+      <div class="contendor_no_seleccionado">
+        <img src="images/inicio_whatsapp.png" alt="" class="fondo inicio">
+        <h2>WhatsApp Web</h2>
+        <p>Envía y recibe mensajes sin necesidad de tener tu teléfono conectado.</p>
+        <span>Cifrado de extremo a extremo</span>
+      </div>
+
+      <!-- CABECERA -->
+      <div class="whatsapp_cabecera">
+        <div class="whatsapp_cabecera_izquierda">
+          <div class="cabecera_perfil_propio">
+            <img src="images/img1.jpg" alt="" class="perfil_imagen">
+          </div>
+          <h4>Qazi <br><span>En linea</span></h4>
+        </div>
+        <ul class="cabecera_iconos">
+          <li class="cabecera_iconos_item" id="abrir_contenedor_whatsapp_derecha_opciones"><ion-icon
+              name="search-outline"></ion-icon></li>
+          <li class="cabecera_iconos_item" id="abrir_contenedor_icono_opciones_chat"><ion-icon
+              name="ellipsis-vertical"></ion-icon>
+            <!-- OPCIÓN 3 -->
+            <div class="contenedor_icono_opciones_chat">
+              <ul>
+                <li>Info. del contacto</li>
+                <li>Seleccionar mensajes</li>
+                <li>Cerrar chat</li>
+                <li>Silenciar notificaciones</li>
+                <li>Mensajes temporales</li>
+                <li>Eliminar chat</li>
+                <li>Reportar</li>
+                <li>Bloquear</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- CAJA DE MENSAJES -->
+      <div class="contenedor_caja_mensajes scroll_bar_whatsapp">
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Hi <br><span>12:18</span><ion-icon name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Hey <br><span>12:18</span></p>
+        </div>
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span><ion-icon
+              name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+        </div>
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Eaque aliquid fugiat accusamus dolore qui vitae ratione optio sunt <br><span>12:15</span><ion-icon
+              name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br><span>12:15</span></p>
+        </div>
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur <br><span>12:15</span><ion-icon
+              name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+        </div>
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span><ion-icon
+              name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span><ion-icon
+              name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+        </div>
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span><ion-icon
+              name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+        </div>
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span><ion-icon
+              name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+        </div>
+        <div class="whatsapp_mensaje mi_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span><ion-icon
+              name="checkmark-done-sharp"></ion-icon></p>
+        </div>
+        <div class="whatsapp_mensaje amigo_mensaje">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br><span>12:15</span></p>
+        </div>
+      </div>
+
+      <!-- CHAT INPUT -->
+      <div class="chat_input">
+        <!-- OPCIÓN 1 -->
+        <div class="contenedor_icono_opciones_emoticones">
+          <div><ion-icon name="happy-outline"></ion-icon></div>
+          <div><ion-icon name="happy-outline"></ion-icon></div>
+          <div><ion-icon name="happy-outline"></ion-icon></div>
+          <div><ion-icon name="happy-outline"></ion-icon></div>
+        </div>
+        <ul>
+          <li class="chat_input_iconos_item" id="abrir_contenedor_icono_opciones_emoticones"><ion-icon name="happy-outline"></ion-icon></li>
+          <li class="chat_input_iconos_item" id="abrir_contenedor_icono_opciones_herramientas"><ion-icon
+              name="arrow-redo"></ion-icon>
+            <!-- OPCIÓN 2 -->
+            <div class="contenedor_icono_opciones_herramientas">
+              <div><ion-icon name="happy-outline"></ion-icon></div>
+              <div><ion-icon name="happy-outline"></ion-icon></div>
+              <div><ion-icon name="happy-outline"></ion-icon></div>
+              <div><ion-icon name="happy-outline"></ion-icon></div>
+            </div>
+          </li>
+          <li class="chat_input_text"><input type="text" placeholder="Escribe un mensaje aquí."></li>
+          <li><ion-icon name="mic"></ion-icon></li>
+        </ul>
+      </div>
+
+    </div>
+
+    <!-- DERECHA OPCIONES -->
+    <div class="contenedor_whatsapp_derecha_opciones">
+      <!-- CABECERA -->
+      <div class="whatsapp_cabecera">
+        <span id="cerrar_contenedor_whatsapp_derecha_opciones"><ion-icon name="close"></ion-icon> Buscar mensajes</span>
+      </div>
+
+      <div>
+        Derecha opciones
+      </div>
+    </div>
+
+  </div>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
